@@ -1,0 +1,31 @@
+
+
+startDate = 2025-01-15
+frequencyInDays = 30 days
+
+fromDate = 2025-03-01
+toDate = 2025-05-01
+
+03/15, 04/15
+
+Assume the host wants to pay when moving it on the startDate. Then the first payment will be on the start day, the next payment will be
+n days from the startDay, where n = frequencyInDays.
+
+What happen on the Feb 28 or 29th?
+
+startData = 2025-01-15
+scheduleDayOfMonth = 15
+
+
+fromDateDayOfMonth = fromDate.dayOfMonth();
+
+if (scheduleDayOfMonth = 15 > fromDateDayOfMonth = 01) {
+    scheduledDay = fromDate.plusDay(scheduleDayOfMonth - fromDateOfMonth);
+} else {
+    // check to see
+    scheduledDay = fromDate.plusDay(frequencyInDays - (fromDateOfMonth - scheduledDayOfMonth));
+}
+
+while (scheduledDate.isBehind(toDate) {
+    add to the list;
+}
